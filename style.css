@@ -1,0 +1,627 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+.main-header {
+    background-color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #87A9F0;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 24px;
+}
+
+.logo h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navigation a {
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.register-btn {
+    background-color: #87A9F0;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    min-width: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #5384ee;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(64, 169, 255, 0.2);
+}
+
+.login-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+    padding: 12px 20px;
+    font-size: 13px;
+    color: #40A9FF;
+    background: #f8f9fa;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #40A9FF;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #40A9FF;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.breadcrumb .separator {
+    color: #999;
+    margin: 0 5px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.current-page {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumb-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+/* Profile container styles */
+.profile-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.category {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.profile-main {
+    display: flex;
+    gap: 30px;
+}
+
+/* Profile photos styles */
+.profile-photos {
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-photo img {
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 8px;
+}
+
+.photo-gallery img {
+    width: 156px;
+    height: 156px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add styles for contact info under photos */
+.photo-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.photo-contact-info .location {
+    font-weight: 700;
+    color: #87A9F0;
+}
+
+.photo-contact-info .phone,
+.photo-contact-info .email,
+.photo-contact-info .ca {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+}
+
+.photo-contact-info img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+}
+
+.photo-contact-info .note {
+    color: #999;
+    font-size: 12px;
+}
+
+/* Profile info styles */
+.profile-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.profile-name img {
+    width: 28px;
+    height: 28px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 800;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #f5f5f5;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #666;
+}
+
+.info-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.info-item {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.label {
+    color: #666;
+}
+
+/* Contact info styles */
+.contact-info {
+    color: #40A9FF;
+}
+
+.location, .phone, .email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.note {
+    color: #999;
+    font-size: 12px;
+}
+
+/* Footer styles */
+.main-footer {
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-footer .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.main-footer .logo img {
+    height: 32px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #87A9F0;
+}
+
+.copyright {
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Add these styles */
+.contact-info img,
+.zodiac-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.location img,
+.phone img,
+.email img {
+    opacity: 0.7;
+}
+
+.zodiac-icon {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* Add styles for personal information items */
+.personal-info .info-item {
+    margin-bottom: 8px;
+}
+
+.value {
+    color: #333;
+}
+
+/* Update navigation font */
+.navigation a,
+.category a,
+.register-btn,
+.login-btn {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Update modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    margin: 0;
+    padding: 0 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content img {
+    height: 40vh;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    transition: all 0.3s ease;
+}
+
+/* Add styles for modal arrows */
+.modal-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.modal-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+    left: -40px;
+}
+
+.right-arrow {
+    right: -40px;
+}
+
+/* Add styles for connect modal */
+.connect-modal {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: default;
+}
+
+.connect-message {
+    color: #333;
+}
+
+.connect-message h2 {
+    color: #87A9F0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.connect-message p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.close-connect-modal {
+    margin-top: 20px;
+    padding: 8px 24px;
+    background: #87A9F0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.close-connect-modal:hover {
+    background: #668ee6;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(64, 169, 255, 0.2);
+}
+
+/* Add styles for the Write button */
+.write-btn {
+    background-color: #87A9F0;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.write-btn:hover {
+    background-color: #5384ee;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(64, 169, 255, 0.2);
+}
+
+/* Update category styles */
+.category a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.category a:visited {
+    color: #333;
+}
+
+.category a:hover {
+    color: #87A9F0;
+}
+
+.category a.active {
+    color: #87A9F0;
+    font-weight: 700;
+}
+
+.category a.active:hover {
+    color: #5384ee;
+}
+
+/* Add styles for write modal */
+.write-modal {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    cursor: default;
+}
+
+.write-message h2 {
+    color: #87A9F0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.message-input {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    resize: none;
+}
+
+.send-message-btn {
+    background: #87A9F0;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.send-message-btn:hover {
+    background: #5384ee;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(64, 169, 255, 0.2);
+}
+
+/* Success modal styles */
+.success-modal {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 400px;
+    text-align: center;
+}
+
+.success-message h2 {
+    color: #87A9F0;
+    margin-bottom: 15px;
+}
+
+.success-message p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.close-success-modal {
+    background: #87A9F0;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.close-success-modal:hover {
+    background: #5384ee;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(64, 169, 255, 0.2);
+}
+
+/* Add styles for invalid input */
+.message-input.invalid {
+    border-color: #ff4d4d;
+    background-color: #fff0f0;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}

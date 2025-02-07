@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet-of-Love</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="src/icon/logo.svg" alt="Planet_of_Love">
+            <h1>Planet-of-Love</h1>
+        </div>
+        <div class="category">
+            <a href="#" class="active">HOT category ❤️</a>
+            <a href="#">Meet new people 👥</a>
+        <nav class="navigation">
+            </div>
+            <div class="auth-buttons">
+                <button class="register-btn">Connect to Love</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="#">Main</a> <span class="separator">➜</span>
+        <a href="#">Finding a partner</a> <span class="separator">➜</span>
+        <span class="current-page">HOT category <img src="src/icon/heart.svg" alt="❤️" class="breadcrumb-icon"></span>
+    </div>
+
+    <main class="profile-container">
+        <div class="profile-card">
+            <div class="profile-main">
+                <div class="profile-photos">
+                    <div class="main-photo">
+                        <img src="src/ph/ph1.png" alt="Profile Photo">
+                    </div>
+                    <div class="photo-gallery">
+                        <img src="src/ph/ph2.png" alt="Additional Photo 1">
+                        <img src="src/ph/ph3.png" alt="Additional Photo 2">
+                    </div>
+                    <div class="photo-contact-info">
+                        <div class="location">
+                            <img src="src/icon/world.svg" alt="Location">
+                            Russia <span class="note">(I can come anywhere you want)</span>
+                        </div>
+                        <div class="phone">
+                            <img src="src/icon/phone.svg" alt="Phone">
+                            +7 941 243 88 455
+                        </div>
+                        <div class="email">
+                            <img src="src/icon/email.svg" alt="Email">
+                            vitaliklovesex@mail.ru
+                        </div>
+                        <div class="ca">
+                            <img src="src/icon/pumpfun.svg" alt="CA">
+                            Soon
+                        </div>
+                        <button class="write-btn">Write to Vitalik</button>
+                    </div>
+                </div>
+                
+                <div class="profile-info">
+                    <h2 class="profile-name">
+                        Vitalik, 31 
+                        <img src="src/icon/aquarius.svg" alt="Aquarius" class="zodiac-icon">
+                    </h2>
+                    
+                    <section class="looking-for">
+                        <h3>I'm looking for:</h3>
+                        <p>A woman aged 22 to 47, for a romantic relationship, starting a family, travel together</p>
+                    </section>
+
+                    <section class="about-me">
+                        <h3>About me:</h3>
+                        <p>Athletic and motivated guy, looking for a keeper of the hearth and rear behind</p>
+                    </section>
+
+                    
+                    <section class="appearance">
+                        <h3>Appearance:</h3>
+                        <p>Height 6'3.5" (192cm), Weight 194lbs (88kg), strawberry brown hair and blue eyes</p>
+                    </section>
+
+                    <section class="vehicle">
+                        <h3>Vehicle owned:</h3>
+                        <p>I own one</p>
+                    </section>
+                    
+                    <section class="smoking">
+                        <h3>Smoking:</h3>
+                        <p>I don't smoke, but I can start if you need me to</p>
+                    </section>
+                    
+                    <section class="alcohol">
+                        <h3>Alcohol:</h3>
+                        <p>like smoking</p>
+                    </section>
+                    
+                    <section class="interests">
+                        <h3>Interests:</h3>
+                        <div class="tags">
+                            <span class="tag">Computers</span>
+                            <span class="tag">Travels</span>
+                            <span class="tag">Fast cars</span>
+                            <span class="tag">Family</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="logo">
+            <img src="src/icon/logo.svg" alt="LovePlanet">
+            <span class="logo-text">Planet-of-Love</span>
+        </div>
+        <p class="copyright">©All rights reserved</p>
+    </footer>
+
+    <div class="modal" id="photoModal">
+        <div class="modal-content">
+            <button class="modal-arrow left-arrow">❮</button>
+            <img src="" alt="Full size photo" id="modalImage">
+            <button class="modal-arrow right-arrow">❯</button>
+        </div>
+    </div>
+
+    <div class="modal" id="connectModal">
+        <div class="modal-content connect-modal">
+            <div class="connect-message">
+                <h2>Coming Soon!</h2>
+                <p>We're working hard to connect hearts around the world.</p>
+                <p>This feature will be available soon.</p>
+                <button class="close-connect-modal">Got it</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="writeModal">
+        <div class="modal-content write-modal">
+            <div class="write-message">
+                <h2>Write to Vitalik</h2>
+                <textarea placeholder="Type your message here..." class="message-input"></textarea>
+                <button class="send-message-btn">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="success-message">
+                <h2>Message Sent!</h2>
+                <p>Your message has been successfully sent to Vitalik.</p>
+                <button class="close-success-modal">Got it</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
